@@ -1,0 +1,234 @@
+@font-face {
+  font-family: "Induction";
+  src: url("/assets/font/Induction-Regular.woff") format("woff2"),
+    url("/assets/font/Induction-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("assets/font/Orbitron-Medium.woff2") format("woff2"),
+    url("assets/font/Orbitron-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("assets/font/Orbitron-Bold.woff2") format("woff2"),
+    url("assets/font/Orbitron-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("assets/font/Orbitron-Black.woff2") format("woff2"),
+    url("assets/font/Orbitron-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.btn {
+  padding: 15px 30px;
+  background-color: #b70000;
+  border: none;
+  border-radius: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s all;
+
+  &:hover,
+  &:focus {
+    border-radius: 15px;
+    cursor: pointer;
+  }
+}
+
+.red-word {
+  color: #b70000;
+  font-weight: 500;
+}
+
+.app {
+  font-family: "Induction";
+  width: 100%;
+  background: #121212;
+  color: #ffffff;
+  &__content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+  }
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+
+  &__title {
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+
+    &--item {
+      margin: 0 20px;
+      padding: 5px 0;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.active {
+        border-bottom: 1px solid #b70000;
+      }
+    }
+  }
+}
+
+.hero {
+  margin-bottom: 200px;
+  &__intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 90px;
+    font-family: "Orbitron";
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &__left-col {
+    width: 50%;
+    padding-left: 40px;
+  }
+
+  &__right-col {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-height: 600px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+
+  &__item {
+    margin: 0 80px;
+    font-family: "Orbitron";
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &--numeral {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    &--type {
+      margin: 0;
+      color: #b70000;
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+
+  &__left-col {
+    width: 50%;
+  }
+
+  &__right-col {
+    width: 50%;
+    padding-left: 100px;
+  }
+
+  &__desc {
+    font-family: "Orbitron";
+    font-size: 48px;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  &__store {
+    display: flex;
+
+    img {
+      max-width: 220px;
+    }
+
+    &--googleplay {
+      margin-left: 20px;
+    }
+
+    &--appstore:hover,
+    &--googleplay:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.partners {
+  margin-bottom: 150px;
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    &--item {
+      margin: 0 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+}
