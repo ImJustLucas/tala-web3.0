@@ -1,28 +1,7 @@
 @font-face {
   font-family: "Induction";
-  src: url("/assets/font/Induction-Regular.woff") format("woff2"), url("/assets/font/Induction-Regular.woff") format("woff");
+  src: url("/assets/font/Induction-Regular.woff2") format("woff2"), url("/assets/font/Induction-Regular.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Orbitron";
-  src: url("assets/font/Orbitron-Medium.woff2") format("woff2"), url("assets/font/Orbitron-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Orbitron";
-  src: url("assets/font/Orbitron-Bold.woff2") format("woff2"), url("assets/font/Orbitron-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Orbitron";
-  src: url("assets/font/Orbitron-Black.woff2") format("woff2"), url("assets/font/Orbitron-Black.woff") format("woff");
-  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
@@ -94,7 +73,7 @@
 }
 .hero__title {
   font-size: 90px;
-  font-family: "Orbitron";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 300;
   text-transform: uppercase;
@@ -123,7 +102,7 @@
 }
 .stats__item {
   margin: 0 80px;
-  font-family: "Orbitron";
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -152,7 +131,7 @@
   padding-left: 100px;
 }
 .download__desc {
-  font-family: "Orbitron";
+  font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-weight: 300;
   margin: 0;
@@ -196,4 +175,138 @@
 .partners__btn {
   display: flex;
   justify-content: center;
+}
+
+.discover {
+  margin-bottom: 200px;
+}
+.discover__list {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.discover__list--item {
+  padding: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  width: 150px;
+}
+.discover__list--item h3 {
+  font-size: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #b70000;
+  width: 100%;
+  text-align: center;
+}
+.discover__list--item.active {
+  margin: 0 100px;
+  transform: scale(1.1);
+  border: 1px solid #b70000;
+  background-color: #222222;
+}
+.discover__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.contact {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 200px;
+}
+.contact__title {
+  font-family: "Induction";
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.contact .container {
+  display: flex;
+  justify-content: center;
+}
+.contact__left-col {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #b70000;
+}
+.contact__right-col {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+}
+.contact__form {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__form .form--control {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contact__form .form--control label {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 300;
+}
+.contact__form .form--control input {
+  border: 2px solid #b70000;
+  border-radius: 15px;
+  padding: 10px;
+  background: transparent;
+  color: #ffffff;
+}
+.contact__form .form--control input::-moz-placeholder {
+  color: #949494;
+  text-transform: uppercase;
+}
+.contact__form .form--control input:-ms-input-placeholder {
+  color: #949494;
+  text-transform: uppercase;
+}
+.contact__form .form--control input::placeholder {
+  color: #949494;
+  text-transform: uppercase;
+}
+.contact__form .form--control input:active, .contact__form .form--control input:focus {
+  border: 2px solid #b70000;
+  outline: none;
+}
+.contact__form .form--row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contact__form .form--row .form--control {
+  width: 47%;
+}
+.contact__form button {
+  align-self: flex-end;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+.footer__col:first-child {
+  align-self: center;
+}
+.footer__col--list-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin: 5px 0;
+  transition: 0.3s all;
+}
+.footer__col--list-item:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

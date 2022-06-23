@@ -1,35 +1,8 @@
 @font-face {
   font-family: "Induction";
-  src: url("/assets/font/Induction-Regular.woff") format("woff2"),
+  src: url("/assets/font/Induction-Regular.woff2") format("woff2"),
     url("/assets/font/Induction-Regular.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Orbitron";
-  src: url("assets/font/Orbitron-Medium.woff2") format("woff2"),
-    url("assets/font/Orbitron-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Orbitron";
-  src: url("assets/font/Orbitron-Bold.woff2") format("woff2"),
-    url("assets/font/Orbitron-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Orbitron";
-  src: url("assets/font/Orbitron-Black.woff2") format("woff2"),
-    url("assets/font/Orbitron-Black.woff") format("woff");
-  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
@@ -109,7 +82,7 @@
 
   &__title {
     font-size: 90px;
-    font-family: "Orbitron";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 300;
     text-transform: uppercase;
@@ -143,7 +116,7 @@
 
   &__item {
     margin: 0 80px;
-    font-family: "Orbitron";
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 600;
 
@@ -177,7 +150,7 @@
   }
 
   &__desc {
-    font-family: "Orbitron";
+    font-family: "Montserrat", sans-serif;
     font-size: 48px;
     font-weight: 300;
     margin: 0;
@@ -230,5 +203,153 @@
   &__btn {
     display: flex;
     justify-content: center;
+  }
+}
+
+.discover {
+  margin-bottom: 200px;
+  &__list {
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    margin-bottom: 100px;
+
+    &--item {
+      padding: 30px;
+      border: 1px solid #ffffff;
+      border-radius: 10px;
+      width: 150px;
+
+      h3 {
+        font-size: 24px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #b70000;
+        width: 100%;
+        text-align: center;
+      }
+
+      &.active {
+        margin: 0 100px;
+        transform: scale(1.1);
+        border: 1px solid #b70000;
+        background-color: #222222;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.contact {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 200px;
+
+  &__title {
+    font-family: "Induction";
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__left-col {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #b70000;
+  }
+
+  &__right-col {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__form {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .form--control {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 15px;
+
+      label {
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 300;
+      }
+
+      input {
+        border: 2px solid #b70000;
+        border-radius: 15px;
+        padding: 10px;
+        background: transparent;
+        color: #ffffff;
+
+        &::placeholder {
+          color: #949494;
+          text-transform: uppercase;
+        }
+
+        &:active,
+        &:focus {
+          border: 2px solid #b70000;
+          outline: none;
+        }
+      }
+    }
+    .form--row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 15px;
+
+      .form--control {
+        width: 47%;
+      }
+    }
+
+    button {
+      align-self: flex-end;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
+
+  &__col {
+    &:first-child {
+      align-self: center;
+    }
+    &--list {
+      &-item {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        text-transform: capitalize;
+        margin: 5px 0;
+        transition: 0.3s all;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
   }
 }

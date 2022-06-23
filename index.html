@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>TALA - FIRST WEB 3.0 NORMANDY PROJECT</title>
   </head>
   <body class="app">
@@ -140,55 +146,63 @@
 
       <!-- CONTACT -->
       <div class="contact">
-        <h2 class="contact__title"></h2>
-        <div class="contact__left-col">
-          <div class="contact__social-media">
-            <div class="contact__social-media--item instagram"></div>
-            <div class="contact__social-media--item youtube"></div>
-            <div class="contact__social-media--item github"></div>
+        <h2 class="contact__title">CONTACT US</h2>
+        <div class="container">
+          <div class="contact__left-col">
+            <div class="contact__social-media">
+              <div class="contact__social-media--item instagram">
+                <img src="/assets/img/RSLogo-1.png" alt="insta" />
+              </div>
+              <div class="contact__social-media--item youtube">
+                <img src="/assets/img/RSLogo-2.png" alt="youtube" />
+              </div>
+              <div class="contact__social-media--item github">
+                <img src="/assets/img/RSLogo-3.png" alt="github" />
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="contact__right-col">
-          <div class="contact__form">
-            <div class="form--col">
+          <div class="contact__right-col">
+            <div class="contact__form">
+              <div class="form--row">
+                <div class="form--control">
+                  <label for="name">name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="input-name"
+                    placeholder="doe"
+                  />
+                </div>
+                <div class="form--control">
+                  <label for="firstname">first name</label>
+                  <input
+                    type="text"
+                    name="firstname"
+                    id="input-firstname"
+                    placeholder="john"
+                  />
+                </div>
+              </div>
               <div class="form--control">
-                <label for="name">name</label>
+                <label for="email">email</label>
                 <input
-                  type="text"
-                  name="name"
-                  id="input-name"
-                  placeholder="doe"
+                  type="email"
+                  name="email"
+                  id="input-email"
+                  placeholder="johndoe@gamil.com"
                 />
               </div>
               <div class="form--control">
-                <label for="firstname">first name</label>
+                <label for="message">message</label>
                 <input
-                  type="text"
-                  name="firstname"
-                  id="input-firstname"
-                  placeholder="john"
+                  type="message"
+                  name="message"
+                  id="input-message"
+                  placeholder="Hi, my name is Jhon !"
                 />
               </div>
+              <button type="submit" class="btn btn--regular">send</button>
             </div>
-            <div class="form--control">
-              <label for="email">email</label>
-              <input
-                type="email"
-                name="email"
-                id="input-email"
-                placeholder="johndoe@gamil.com"
-              />
-            </div>
-            <div class="form--control">
-              <label for="message">message</label>
-              <input
-                type="message"
-                name="message"
-                id="input-message"
-                placeholder="Hi, my name is Jhon !"
-              />
-            </div>
-            <button type="submit" class="btn btn--regular">send</button>
           </div>
         </div>
       </div>
